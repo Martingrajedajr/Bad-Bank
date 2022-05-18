@@ -1,0 +1,25 @@
+  
+  .form-control {
+    width: 100%;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: none;
+    padding: 1rem;
+    height: 2.25em;
+    font-size: 24px;
+  }
+  
+  .form-control:hover {
+    background-color: #d3d3d3;
+  }
+  
+  .form-control:hover {
+    cursor: pointer;
+    opacity: 1;
+  }
+
+  .img-fluid {
+      background: rgb(0, 170, 255);
+      opacity: .7;
+  }
