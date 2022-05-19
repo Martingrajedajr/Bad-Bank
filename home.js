@@ -5,7 +5,7 @@ const Home = () => {
       txtcolor="dark"
       title="Welcome To The Bank"
       text="For all your banking needs."
-      body={(<img src="assets/images/bank.png" className="img-fluid" alt="Responsive image"/>)}
+      body={(<img src="bank.png" className="img-fluid" alt="Responsive image"/>)}
     />    
   );  
 }
