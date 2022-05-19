@@ -10,7 +10,6 @@ const Deposit = () => {
 
 	const validate = (field) => {
         if (Number(field) != field) {
-          setTimeout(() => setStatus(''),3000);
 		  alert('Please enter a number.');
 		  clearForm();
           return false;
@@ -41,7 +40,7 @@ const Deposit = () => {
 
 	  return (
 		<Card
-		  bgcolor="light"
+		  bgcolor="dark"
 		  header="DEPOSIT"
 		  status={status}
 		  body={show ? (
@@ -52,12 +51,12 @@ const Deposit = () => {
 			  <br />
 			  <input type="input" className="form-control" id="amount" placeholder="Deposit Amount" value={amount} onChange={e => setAmount(e.currentTarget.value)} />
 			  <br />
-			  <button type="submit" className="btn btn-dark" id="create" onClick={handleSubmit}>DEPOSIT</button>
+			  <button type="submit" className="btn btn-light" id="create" onClick={handleSubmit}>DEPOSIT</button>
 			  </> 
 			  ):(
 				<>
 				<h5>Success</h5>
-				<button type="submit" className="btn btn-dark" onClick={clearForm}>Make another Deposit.</button>
+				<button type="submit" className="btn btn-light" onClick={clearForm}>Make another Deposit.</button>
 				</>
 			   )}
 			/>

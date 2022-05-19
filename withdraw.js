@@ -41,7 +41,7 @@ const Withdraw = () => {
 
   return (
 		<Card
-		  bgcolor="light"
+		  bgcolor="dark"
 		  header="WITHDRAW"
 		  status={status}
 		  body={show ? (
@@ -52,12 +52,12 @@ const Withdraw = () => {
 			  <br />
 			  <input type="input" className="form-control" id="amount" placeholder="Withdraw Amount" value={amount} onChange={e => setAmount(e.currentTarget.value)} />
 			  <br />
-			  <button type="submit" className="btn btn-dark" id="create" onClick={handleSubmit}>Withdraw</button>
+			  <button type="submit" className="btn btn-light" id="create" onClick={handleSubmit}>Withdraw</button>
 			  </> 
 			  ):(
 				<>
 				<h5>Success</h5>
-				<button type="submit" className="btn btn-dark" onClick={clearForm}>Make another Withdrawl.</button>
+				<button type="submit" className="btn btn-light" onClick={clearForm}>Make another Withdrawl.</button>
 				</>
 			   )}
 			/>

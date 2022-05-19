@@ -14,7 +14,7 @@ const CreateAccount = () => {
         return false;
       }
 
-      if (field == password && password.length < 8) {
+      if (password.length < 8) {
         alert("Password must be at least 8 characters long!");
         clearForm();
         return false;
@@ -42,7 +42,7 @@ const CreateAccount = () => {
 
   return (
     <Card
-      bgcolor="light"
+      bgcolor="dark"
       header="CREATE ACCOUNT"
       status={status}
       body={show ? (  
@@ -53,12 +53,12 @@ const CreateAccount = () => {
               <input type="input" className="form-control" id="email" placeholder="Enter email" value={email} onChange={e => setEmail(e.currentTarget.value)}/><br/>
               Password<br/>
               <input type="password" className="form-control" id="password" placeholder="Enter password" value={password} onChange={e => setPassword(e.currentTarget.value)}/><br/>
-              <button type="submit" className="btn btn-dark" id="create" onClick={handleCreate}>CREATE ACCOUNT</button>
+              <button type="submit" className="btn btn-light" id="create" onClick={handleCreate}>CREATE ACCOUNT</button>
               </>
             ):(
               <>
               <h5>Success</h5>
-              <button type="submit" className="btn btn-dark" onClick={clearForm}>Add Another Account</button>
+              <button type="submit" className="btn btn-light" onClick={clearForm}>Add Another Account</button>
               </>
             )}
     />

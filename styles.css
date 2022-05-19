@@ -19,7 +19,25 @@
     opacity: 1;
   }
 
-  .img-fluid {
-      background: rgb(0, 170, 255);
-      opacity: .7;
-  }
+  .card {
+    opacity: .8;
+    margin: 0px auto;
+    float: none;
+    margin-top: 350px;
+}
+
+  .alert {
+    text-emphasis-color: red;
+}
+
+ body {
+   background-image: url('assets/images/mit-xpro.png');
+   background-color: #cccccc;
+   height: 500px;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: auto;
+   position: relative;
+ }
+
+ 

@@ -7,7 +7,7 @@ const UserContext = React.createContext(null);
 const Card = (props) => {
     const classes = () => {
       const bg  = props.bgcolor ? ' bg-' + props.bgcolor : ' ';
-      const txt = props.txtcolor ? ' text-' + props.txtcolor: ' text-dark';
+      const txt = props.txtcolor ? ' text-' + props.txtcolor: ' text-white';
       return 'card mb-3 ' + bg + txt;
     }
   
